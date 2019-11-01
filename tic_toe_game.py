@@ -1,3 +1,5 @@
+
+
 griglia = ['-', '-', '-',
            '-', '-', '-',
            '-', '-', '-']
@@ -27,6 +29,9 @@ def fun():
             H = int(H)-1
             while (griglia[H]!='-'):
                 H = input("Numero già occupato: ")
+                while (
+                        H != "1" and H != "2" and H != "3" and H != "4" and H != "5" and H != "6" and H != "7" and H != "8" and H != "9"):
+                    H = input("Inserire un numero da 1-9: ")
                 H = int(H) - 1
             griglia[H] = 'X'
 
@@ -37,6 +42,9 @@ def fun():
             H = int(H)-1
             while (griglia[H]!='-'):
                 H = input("Numero già occupato: ")
+                while (
+                        H != "1" and H != "2" and H != "3" and H != "4" and H != "5" and H != "6" and H != "7" and H != "8" and H != "9"):
+                    H = input("Inserire un numero da 1-9: ")
                 H = int(H) - 1
             griglia[H] = 'O'
 
